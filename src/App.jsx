@@ -5,34 +5,33 @@ import elephant from "./images/elephant.jpeg";
     {
       id:1,
       img:elephant,
-      src:'./src/images/elephant.jpeg'
     },
     {
       id:2,
       img:elephant,
-      src:'./src/images/elephant.jpeg'
     },
     {
       id:3,
       img:elephant,
-      src:'./src/images/elephant.jpeg'
     },
     {
       id:4,
       img:elephant,
-      src:'./src/images/elephant.jpeg'
     }
   ]
+  const styles = {
+    
+  }
 
 function App() {
   return(
     <>
-    <div className='header'><p>Kalvium Gallery</p></div>
-     <div>
+    <div><h1>Kalvium Gallery</h1></div>
+    <div>
       {data.map(item => (
-        <img key={item.id} src={item.src} alt={item.img} />
-      ))}
-     </div>
+      <img key={item.id} src={item.img} alt="" />
+    ))}
+    </div>
     </>
   )
 }
